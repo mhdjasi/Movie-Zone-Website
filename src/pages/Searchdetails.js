@@ -1,42 +1,38 @@
-import React from "react";
+import React from 'react'
+import './Moviedetails.css'
 import { useLocation, useParams } from "react-router-dom";
-import "./Rowdetails.css";
+
 
 const base_url = "https://image.tmdb.org/t/p/original/";
 
-function Rowdetails(props) {
 
+function Searchdetails(props) {
 
-  const params = useParams();
+    const params = useParams();
 
-  const location = useLocation();
+    const location = useLocation();
 
-  // console.log(props, "props");
+    
+    const details = location.state?.item;
 
-  // console.log(location, "uselocation");
+    console.log(details);
 
-  const data = location.state?.movies;
-
-  console.log(data);
-
-  const details = data.find((i) => i.id == params.id);
-
-
-  console.log("data details", details);
-
-
-
+    function truncate(content,n){
+      return content?.length>n?content?.substr(0,n-1)+"...":content
+   }
   return (
-    <>
+
+<div className='searchbody'>
       <div
         className="main"
         style={{
-          backgroundImage: `linear-gradient(to right, rgba(1, 2, 19, 2),rgba(255, 255, 255, 0)),url("https://image.tmdb.org/t/p/original/${details.backdrop_path}")`,
+          backgroundImage: `linear-gradient(to right, rgba(1, 2, 19, 2),rgba(255, 255, 255, 0)),url("https://image.tmdb.org/t/p/original/${details.backdrop_path|| details.poster_path
+        }")`,
           backgroundSize: "cover",
         }}
       >
         <h1 className="titledetails">{details.name || details.title || details.original_name}</h1>
-        <p className="overviewdetails">{details.overview}</p>
+        <p className="overviewdetails">{truncate(details.overview,338)}</p>
 
         <div className="maindetails">
           <img
@@ -92,8 +88,8 @@ function Rowdetails(props) {
           </div>
 
       </div>
-    </>
-  );
+    </div>    
+  )
 }
 
-export default Rowdetails;
+export default Searchdetails

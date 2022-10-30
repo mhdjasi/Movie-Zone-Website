@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Col, Row } from 'react-bootstrap';
 import url from '../baseUrl';
 import CustomPagination from '../components/CustomPagination';
+import Footer from '../components/Footer';
 import MovieCard from '../components/MovieCard';
 import './Movies.css'
 
@@ -57,6 +58,8 @@ console.log(movies);
     {numOfPages>1 && (
       <CustomPagination setPage={setPage} numOfPages={numOfPages}/>
   )}
+
+<Footer/>
 
 </> 
 

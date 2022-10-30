@@ -1,0 +1,162 @@
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+    .movieposter{
+     display: flex;
+     width: 120px;
+     height: 180px;
+     margin: 0px 12px;
+     box-shadow: 1px 1px 10px black;
+
+ }
+ .image{
+     width: 120px;
+     height: 180px;
+ }
+ 
+ .moviebadge{
+     justify-content: center;
+     align-items: center;
+     padding: 0px 35px;
+    }
+    .movie-caption{
+     text-align: center;
+     justify-content: center;
+     padding: 0px 30px;
+     width: 146px;
+
+    }
+
+    .movie-caption h6{
+     margin-top: 5px;
+     font-size: 12px;
+     margin-bottom: 40px;
+     color: white;
+
+
+
+
+ }
+
+}
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+ .movieposter{
+     display: flex;
+     width: 150px;
+     height: 230px;
+     margin: 15px 12px;
+     box-shadow: 1px 1px 10px black;
+
+ }
+ .image{
+     width: 150px;
+     height: 230px;
+ }
+ 
+ .moviebadge{
+     justify-content: center;
+     align-items: center;
+     padding: 0px 45px;
+    }
+    .movie-caption{
+     text-align: center;
+     justify-content: center;
+     padding: 0px 30px;
+     width: 180px;
+
+    }
+
+    .movie-caption h6{
+     margin-top: 5px;
+     font-size: 12px;
+     margin-bottom: 40px;
+     color: white;
+
+
+
+ }
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1280px){
+ .movieposter{
+     display: flex;
+     width: 170px;
+     height: 260px;
+     margin: 15px 46px;
+     box-shadow: 1px 1px 10px black;
+
+ }
+ .image{
+     width: 170px;
+     height: 260px;
+ }
+ 
+ .moviebadge{
+     justify-content: center;
+     align-items: center;
+     padding: 0px 65px;
+    }
+    .movie-caption{
+     text-align: center;
+     justify-content: center;
+width: 270px;
+padding: 0px 10px;
+
+    }
+
+    .movie-caption h6{
+     font-size: 13px;
+     margin-bottom: 50px;
+     color: white;
+
+
+ }
+    
+
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 1281px){
+ .movieposter{
+     display: flex;
+     justify-content: space-around;
+     width: 180px;
+     height: 280px;
+     align-items: center;
+     justify-items: center;
+     margin: 0px 46px;
+     margin-top: 30px;
+     box-shadow: 1px 1px 10px black;
+
+ }
+ .image{
+     width: 190px;
+     height: 280px;
+ }
+ 
+ .moviebadge{
+     justify-content: center;
+     align-items: center;
+     padding: 0px 65px;
+    }
+    .movie-caption{
+     text-align: center;
+     justify-content: center;
+width: 260px;
+padding: 0px 30px;
+
+    }
+
+    .movie-caption h6{
+     font-size: 14px;
+     margin-bottom: 30px;
+color: white;
+
+ }
+
+    
+}
+

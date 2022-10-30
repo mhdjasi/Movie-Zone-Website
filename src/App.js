@@ -8,6 +8,7 @@ import Moviedetails from './pages/Moviedetails';
 import Movies from './pages/Movies';
 import Rowdetails from './pages/Rowdetails';
 import Search from './pages/Search';
+import Searchdetails from './pages/Searchdetails';
 import Series from './pages/Series';
 
 
@@ -27,6 +28,9 @@ function App() {
         <Route path='/search' element={<Search/>} />
         <Route path='/rowdetails/:id' element={<Rowdetails/>} />
         <Route path='/moviedetails/:id' element={<Moviedetails/>} />
+
+        <Route path='/serachdetails/:id' element={<Searchdetails/>} />
+
 
 
 

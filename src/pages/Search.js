@@ -3,7 +3,8 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Col, Row } from "react-bootstrap";
 import CustomPagination from "../components/CustomPagination";
-import MovieCard from "../components/MovieCard";
+import Footer from "../components/Footer";
+import SearchCard from "../components/SearchCard";
 import "./Search.css";
 
 const APIKEY = "47de2b9e8b2462b53975d18185ac40bf";
@@ -35,7 +36,7 @@ function Search() {
   }, [type, page])
 
   return (
-    <div>
+    <div >
       <div className="container-fluid searchbar" style={{ display: "flex" }}>
         <input
           placeholder="search"
@@ -71,7 +72,7 @@ function Search() {
       <Row className="w-100 mt-5 ">
         {content && content.map((movies) => (
           <Col className="list">
-            <MovieCard key={movies.id} movies={movies} base_url={base_url} media_type = {type ? "tv" : "movie"} />
+            <SearchCard key={movies.id} movies={movies} base_url={base_url} media_type = {type ? "tv" : "movie"} />
           </Col>
         ))}
         {searchText && !content && (type ? <h2 style={{ color:"white", textAlign:"center" }} >No Series Found</h2> : <h2 style={{ color:"white", textAlign:"center" }}>No Movies Found</h2>)}
@@ -79,6 +80,8 @@ function Search() {
       {numOfPages > 1 && (
         <CustomPagination setPage={setPage} numOfPages={numOfPages} />
       )}
+
+<Footer/>
     </div>
   );
 }

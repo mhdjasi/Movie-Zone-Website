@@ -13,6 +13,7 @@
 }
 
 
+
 /* Media Query for Mobile Devices */
 @media (max-width: 480px) {
     .main{
@@ -37,7 +38,7 @@
     }
     .posterindetails{
         height: 260px;
-        padding-right: 10px;
+        padding-left: 40px;
         transition:  transform 500ms;
 
     
@@ -47,26 +48,46 @@
         color: rgba(201, 244, 9, 0.999);
         padding-top: 60px;
         text-shadow: 5px 0 80px black;
+
     }
     .values{
-    padding-top: 200px;
+        display: none;
     }
     .valuehead{
-        font-size: 15px;
+        display: none;
     
     }
     .valuedetails{
-        color: rgb(196, 209, 209);
-    
+        display: none;
+
     }
+
     .rating{
         color: white;
-        margin-top: 0px;
+        margin-top: 20px;
+        padding-left: 40px;
         font-size: 15px;
     }
     .vote{
         color: rgba(255, 255, 255, 0.421);
     }
+
+    .values1{
+        padding-top: 20px;
+        padding-left: 40px;
+        }
+        .valuehead1{
+            font-size: 14px;
+            color: rgba(201, 244, 9, 0.999);
+
+        
+        }
+        .valuedetails1{
+            padding-left: 10px;
+            font-size: 14px;
+            color: rgb(196, 209, 209);
+        
+        }
     
 }
   
@@ -74,7 +95,7 @@
 @media (min-width: 481px) and (max-width: 767px) {
     .main{
         margin-top: 0px;
-        padding-top: 200px;
+        padding-top: 100px;
         height: 100vh;
         padding-left: 40px;
         text-shadow: 0 0 50px black;
@@ -114,11 +135,23 @@
         color: rgb(196, 209, 209);
     
     }
+    .values1{
+        display: none;
+        }
+        .valuehead1{
+            display: none;
+        
+        }
+        .valuedetails1{
+            display: none;
+        
+        }
     .rating{
         color: white;
         margin-top: 10px;
         font-size: 13px;
     }
+    
     .vote{
         color: rgba(255, 255, 255, 0.421);
     }
@@ -182,7 +215,17 @@
     .vote{
         color: rgba(255, 255, 255, 0.421);
     }
-    
+    .values1{
+        display: none;
+        }
+        .valuehead1{
+            display: none;
+        
+        }
+        .valuedetails1{
+            display: none;
+        
+        }
 }
   
 /* Media Query for Large screens */
@@ -237,5 +280,16 @@
     .vote{
         color: rgba(255, 255, 255, 0.421);
     }
+    .values1{
+        display: none;
+        }
+        .valuehead1{
+            display: none;
+        
+        }
+        .valuedetails1{
+            display: none;
+        
+        }
     
 }
