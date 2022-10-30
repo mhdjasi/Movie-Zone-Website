@@ -1,6 +1,6 @@
+import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Col, Row } from "react-bootstrap";
-import url from "../baseUrl";
 import CustomPagination from "../components/CustomPagination";
 import Footer from "../components/Footer";
 import MovieCard from "../components/MovieCard";
@@ -19,18 +19,21 @@ function Movies() {
 
 
   async function fetchData() {
-    const result = await url.get(
+    const {data} = await axios.get(
       `https://api.themoviedb.org/3/discover/movie?api_key=${APIKEY}&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=${page}&with_watch_monetization_types=flatrate`
-    );
-    setMovies(result.data.results);
+      );
 
-    setNumOfPages(result.data.total_pages);
+    setMovies(data.results);
+
+    setNumOfPages(500);
   }
+
 
   useEffect(() => {
     fetchData();
     // eslint-disable-next-line
   }, [page]);
+ 
 
   console.log(movies);
 

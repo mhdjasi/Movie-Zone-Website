@@ -4,6 +4,7 @@ import url from '../baseUrl';
 import CustomPagination from '../components/CustomPagination';
 import Footer from '../components/Footer';
 import MovieCard from '../components/MovieCard';
+import SeriesCard from '../components/SeriesCard';
 import './Movies.css'
 
 
@@ -24,7 +25,7 @@ function Series() {
      const result = await url.get(`https://api.themoviedb.org/3/discover/tv?api_key=${APIKEY}&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=${page}&with_watch_monetization_types=flatrate`)
      setMovies(result.data.results);
 
-     setNumOfPages(result.data.total_pages);
+     setNumOfPages(500);
 
   }
 
@@ -47,7 +48,7 @@ console.log(movies);
           movies.map((movie) => (
   
             <Col className="list">
-            <MovieCard key={movie.name} movies={movie} base_url={base_url}/>
+            <SeriesCard key={movie.name} data={movie} base_url={base_url}/>
             </Col>
           
             )

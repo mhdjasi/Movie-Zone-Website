@@ -6,7 +6,7 @@ import "./MovieCard.css";
 function MovieCard({ movies, base_url }) {
   console.log(movies);
   return (
-    <div className="container">
+ <div className="container">
       <div className="movieposter">
         <Link
           to={`/moviedetails/${movies.id}`}

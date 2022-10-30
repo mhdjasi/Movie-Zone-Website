@@ -37,6 +37,7 @@ function Search() {
 
   return (
     <div >
+      <h4 className="searchhead">Search Movies or Series</h4>
       <div className="container-fluid searchbar" style={{ display: "flex" }}>
         <input
           placeholder="search"
