@@ -17,6 +17,7 @@ function MovieCard({ movies, base_url }) {
             variant="top"
             src={`${base_url}${movies.poster_path}`}
             className="image"
+            alt="movie image"
           />
         </Link>
       </div>

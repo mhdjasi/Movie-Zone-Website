@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import './Moviedetails.css'
-import { useLocation, useParams } from "react-router-dom";
-import axios from 'axios';
+import { useLocation } from "react-router-dom";
 
 
 
@@ -10,7 +9,7 @@ const base_url = "https://image.tmdb.org/t/p/original/";
 
 function Moviedetails(props) {
 
-  const params = useParams();
+  // const params = useParams();
 
   const location = useLocation();
 
@@ -50,9 +49,6 @@ function Moviedetails(props) {
 
 
 //   // console.log("movie single",data);
-
-
-
 
   function truncate(content,n){
     return content?.length>n?content?.substr(0,n-1)+"...":content
