@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.posterindetails:hover{
+    transform: scale(1.08);
+
+}
+
+.posterindetails{
+    cursor: pointer;
+}
+
+
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+    .main{
+        margin-top: 0px;
+        padding-top: 80px;
+        height: 60vh;
+        padding-left: 15px;
+        text-shadow: 0 0 50px black;
+    
+    
+    }
+    .titledetails{
+        color: white;
+        font-size: 22px;
+    }
+    .overviewdetails{
+        color: rgb(255, 255, 255);
+        width: 100%;
+        font-size: 14px;
+        padding-top: 15px;
+        
+    }
+    .posterindetails{
+        height: 260px;
+        padding-right: 10px;
+        transition:  transform 500ms;
+
+    
+    }
+    .maindetails{
+        display: flex;
+        color: rgba(201, 244, 9, 0.999);
+        padding-top: 60px;
+        text-shadow: 5px 0 80px black;
+    }
+    .values{
+    padding-top: 200px;
+    }
+    .valuehead{
+        font-size: 15px;
+    
+    }
+    .valuedetails{
+        color: rgb(196, 209, 209);
+    
+    }
+    .rating{
+        color: white;
+        margin-top: 0px;
+        font-size: 15px;
+    }
+    .vote{
+        color: rgba(255, 255, 255, 0.421);
+    }
+    
+}
+  
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+    .main{
+        margin-top: 0px;
+        padding-top: 200px;
+        height: 100vh;
+        padding-left: 40px;
+        text-shadow: 0 0 50px black;
+    
+    }
+    .titledetails{
+        color: white;
+        font-size: 20px;
+    }
+    .overviewdetails{
+        color: rgb(255, 255, 255);
+        width: 95%;
+        font-size: 12px;
+        padding-top: 15px;
+    }
+    .posterindetails{
+        height: 200px;
+        padding-right: 30px;
+        transition:  transform 500ms;
+
+    
+    }
+    .maindetails{
+        display: flex;
+        color: rgba(227, 125, 65, 0.999);
+        padding-top: 10px;
+        text-shadow: 0 0 50px black;
+    }
+    .values{
+    padding-top: 10px;
+    }
+    .valuehead{
+        font-size: 13px;
+    
+    }
+    .valuedetails{
+        color: rgb(196, 209, 209);
+    
+    }
+    .rating{
+        color: white;
+        margin-top: 10px;
+        font-size: 13px;
+    }
+    .vote{
+        color: rgba(255, 255, 255, 0.421);
+    }
+     
+}
+  
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1280px){
+    .main{
+        margin-top: 0px;
+        padding-top: 120px;
+        height: 100vh;
+        padding-left: 50px;
+        text-shadow: 0 0 50px black;
+    
+    
+    }
+    .titledetails{
+        color: white;
+        font-size: 25px;
+    }
+    .overviewdetails{
+        color: rgb(255, 255, 255);
+        width: 65%;
+        font-size: 14px;
+        padding-top: 15px;
+    }
+    .posterindetails{
+        height: 260px;
+        padding-right: 30px;
+        transition:  transform 500ms;
+
+    
+    }
+    .posterindetails:hover{
+        transform: scale(1.08);
+
+    }
+    .maindetails{
+        display: flex;
+        color: rgba(227, 125, 65, 0.999);
+        padding-top: 10px;
+        text-shadow: 0 0 50px black;
+    }
+    .values{
+    padding-top: 50px;
+    }
+    .valuehead{
+        font-size: 16px;
+    
+    }
+    .valuedetails{
+        color: rgb(196, 209, 209);
+    
+    }
+    .rating{
+        color: white;
+        margin-top: 10px;
+        font-size: 16px;
+    }
+    .vote{
+        color: rgba(255, 255, 255, 0.421);
+    }
+    
+}
+  
+/* Media Query for Large screens */
+@media (min-width: 1281px) {
+    .main{
+        margin-top: 0px;
+        padding-top: 120px;
+        height: 100vh;
+        padding-left: 50px;
+        text-shadow: 0 0 50px black;
+    
+    
+    }
+    .titledetails{
+        color: white;
+        font-size: 30px;
+    }
+    .overviewdetails{
+        color: rgb(255, 255, 255);
+        width: 45%;
+        font-size: 15px;
+        padding-top: 15px;
+    }
+    .posterindetails{
+        height: 300px;
+        padding-right: 30px;
+        transition:  transform 500ms;
+
+    
+    }
+    .maindetails{
+        display: flex;
+        color: rgba(227, 125, 65, 0.999);
+        padding-top: 10px;
+        text-shadow: 0 0 50px black;
+    }
+    .values{
+    padding-top: 100px;
+    }
+    .valuehead{
+        font-size: 18px;
+    
+    }
+    .valuedetails{
+        color: rgb(196, 209, 209);
+    
+    }
+    .rating{
+        color: white;
+        margin-top: 20px;
+    }
+    .vote{
+        color: rgba(255, 255, 255, 0.421);
+    }
+    
+}

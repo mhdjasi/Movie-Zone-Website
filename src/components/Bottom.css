@@ -1,0 +1,48 @@
+
+
+.mobile-nav {
+    background-color: rgb(14, 17, 17);
+    position: fixed;
+    bottom: 0;
+    z-index: 100;
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 8px 0px;
+    
+  }
+
+  .bloc-icon {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 10px;
+    
+  }
+
+  .bloc-icon img {
+    height: 15px;
+    filter: invert(100%);
+    display: block;
+    padding: 0px 20px;
+  }
+
+.links{
+  justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 10px;
+}
+
+
+
+  @media (min-width: 768px){
+    .mobile-nav{
+        display: none;
+    }
+  }

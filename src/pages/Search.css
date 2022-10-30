@@ -1,0 +1,54 @@
+
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+    .searchbar{
+margin-top: 50px;
+    }
+    .tabs{
+        width: 100%;
+        filter: invert();
+
+    }
+    
+
+    
+}
+  
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+    .searchbar{
+        margin-top: 50px;
+            }
+            .tabs{
+                filter: invert();
+
+            }
+}
+  
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1280px){
+    .searchbar{
+        margin-top: 60px;
+            }
+            .tabs{
+                margin: 0px 250px;
+                filter: invert();
+
+            }
+}
+  
+/* Media Query for Large screens */
+@media (min-width: 1281px) {
+    .searchbar{
+        margin-top: 100px;
+            }
+            .tabs{
+                justify-content: center;
+                text-align: center;
+                width: 100%;
+                margin: 0px 500px;
+                filter: invert(100%);
+            }
+            
+}

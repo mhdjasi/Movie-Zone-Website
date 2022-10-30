@@ -1,0 +1,220 @@
+Details{
+    display: none;
+}
+
+    .posters{
+        display: flex;
+        overflow-x: scroll;
+        overflow-y: hidden;
+
+    }
+    .posters::-webkit-scrollbar{
+        display: none;
+    }
+    
+   
+.row{
+    padding-bottom: 40px;
+}
+   
+
+
+
+
+    
+    
+    .poster:hover{
+        transform: scale(1.08);
+    }
+
+    .titlename{
+        font-size: 25px;
+        color: rgba(255, 255, 255, 0.378);
+        margin-top: 20px;
+        padding-bottom: 30px;
+        margin-left: 20px;
+        
+    }
+    .titlename:hover{
+        color: yellow;
+    }
+    
+
+
+
+    /* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+    .row{
+        margin-left: 1px;
+        padding: 0px 1px;
+        /* margin-top: 20px; */
+        }
+.titlename{
+    font-size: 15px;
+    margin-left: 10px;
+}
+    .posters{
+        padding: 0px 0px;
+        margin: 0px 1px;
+    }
+    
+    .poster{
+        max-height: 170px;
+        margin-right: 30px;
+        object-fit: contain;
+        transition:  transform 500ms;
+        box-shadow: 5px 1px 15px black;
+
+    }
+    .badge{
+        justify-content: center;
+        align-items: center;
+        padding: 0px 41px;
+    }
+
+    .image-caption{
+        text-align: center;
+        justify-content: center;
+color: white;
+       }
+
+       .image-caption h6{
+        margin-bottom: 30px;
+width: 110px;
+
+    }
+
+
+
+}
+  
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+    
+    .row{
+        margin-left: 20px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    
+        }
+.titlename{
+    font-size: 20px;
+}
+    
+    
+    .poster{
+        max-height: 210px;
+        object-fit: contain;
+        margin-right: 35px;
+        transition:  transform 500ms;
+        box-shadow: 5px 1px 15px black;
+
+    }
+    .badge{
+        justify-content: center;
+        align-items: center;
+        padding: 0px 41px;
+    }
+
+    .image-caption{
+        text-align: center;
+        justify-content: center;
+color: white;
+
+       }
+
+       .image-caption h6{
+        font-size: 13px;
+        margin-bottom: 30px;
+width: 110px;
+
+    }
+
+
+}
+  
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1280px){
+    .row{
+        margin-left: 50px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    
+        }
+
+    
+    
+    .poster{
+        max-height: 250px;
+        object-fit: contain;
+        margin-right: 38px;
+        transition:  transform 500ms;
+        box-shadow: 5px 1px 15px black;
+
+    }
+    .badge{
+        justify-content: center;
+        align-items: center;
+        padding: 0px 51px;
+    }
+
+    .image-caption{
+        text-align: center;
+        justify-content: center;
+color: white;
+
+       }
+
+       .image-caption h6{
+        font-size: 14px;
+        margin-bottom: 30px;
+width: 190px;
+
+    }
+
+    
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 1281px){
+    .row{
+        margin-left: 50px;
+        /* margin-top: 20px; */
+        /* margin-bottom: 30px; */
+    
+        }
+
+    
+    
+    .poster{
+        max-height: 250px;
+        object-fit: contain;
+        margin-right: 80px;
+        transition:  transform 500ms;
+        box-shadow: 5px 1px 15px black;
+
+    }
+    .badge{
+        justify-content: center;
+        align-items: center;
+        padding: 0px 50px;
+    }
+
+    .image-caption{
+        text-align: center;
+        justify-content: center;
+color: white;
+margin: 0px 0px;
+
+       }
+
+       .image-caption h6{
+        font-size: 14px;
+        margin-bottom: 30px;
+width: 130px;
+
+    }
+    
+}
+  
+  

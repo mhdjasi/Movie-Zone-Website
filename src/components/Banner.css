@@ -1,0 +1,87 @@
+
+.banner{
+    height: 80vh;
+    color: white;
+width: 100%;
+background-color: linear-gradient(to right, red , yellow);
+background-size: contain;
+box-shadow: 0px 1px 25px black;
+
+    
+}
+.sample{
+    color: rgba(22, 19, 19, 0.899);
+    color: rgba(255, 255, 255, 0.075);
+}
+.banner_content{
+    margin-left: 1.5rem;
+}
+.banner_title{
+    font-size: 1.7rem;
+    padding-top: 290px;  
+    color: rgb(250, 239, 90);
+}
+.banner_overview{
+    
+    padding-top: 1rem;
+    font-size: 1.3rem;
+    width: 60%;
+}
+
+    /* Media Query for Mobile Devices */
+    @media (max-width: 480px) {
+        .banner{
+            height: 30vh;
+            
+        }
+        .banner_title{
+            font-size: 1rem;
+            padding-top: 150px;  
+        }
+        .banner_overview{
+    
+            padding-top: .5rem;
+            font-size: .7rem;
+            width: 70%;
+            overflow: hidden;
+        }
+    }
+      
+    /* Media Query for low resolution  Tablets, Ipads */
+    @media (min-width: 481px) and (max-width: 767px) {
+        .banner{
+            height: 35vh;
+            
+        }
+        .banner_title{
+            font-size: .8rem;
+            padding-top: 120px;  
+        }
+        .banner_overview{
+    
+            padding-top: .5rem;
+            font-size: .7rem;
+            width: 50%;
+            overflow: hidden;
+        }
+    }
+      
+    /* Media Query for Tablets Ipads portrait mode */
+    @media (min-width: 768px) and (max-width: 1280px){
+        .banner{
+            height: 65vh;
+            
+        }
+        .banner_title{
+            font-size: 1.2rem;
+            padding-top: 250px;  
+        }
+        .banner_overview{
+    
+            padding-top: .5rem;
+            font-size: .9rem;
+            width: 70%;
+            overflow: hidden;
+        }
+    }
+    
